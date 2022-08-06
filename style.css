@@ -1,0 +1,53 @@
+/* ------------------header-section------------ */
+.navebar_bg{
+background-color:#1356d6;
+}
+.nav-link {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+.navebar-btn{
+    background-color: white;
+    color:#1356d6;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+.navbar-brand{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* ---------welcome-area------------ */
+.welcome-btn{
+    background-color: #1356d6;
+    color: white;
+}
+.welcome_content h6{
+    text-transform: uppercase;
+    font-size: 22px;
+    color:black;
+    transition: 0.6s;
+}
+.welcome_content{
+    transition: 0.6s;  
+}
+.welcome_content:hover h6{
+    color:#1356d6;
+}
+.welcome_content:hover{
+    box-shadow: 1px 2px 8px 0px black;
+    cursor: pointer;
+}
