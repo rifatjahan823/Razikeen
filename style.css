@@ -1,20 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
 /* ------------------header-section------------ */
 .navebar_bg{
-background-color:#1356d6;
+background-color:#1D2971;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
 }
 .nav-link {
-    color: white;
+    color: white !important;
     text-transform: capitalize;
     font-weight: 600;
     font-size: 18px;
 }
 .nav-link:focus, .nav-link:hover {
-    color: white;
+    color:  white !important;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.8rem;
     padding-left: 0.8rem;
 }
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+  }
 .navebar-btn{
     background-color: white;
     color:#1356d6;
@@ -30,6 +47,66 @@ background-color:#1356d6;
     font-weight: 600;
     font-size: 20px;
 }
+/* ------------hero-section---------- */
+.calculator{
+    background-color:#1356d6;
+    border-radius: 5px;
+}
+.calculator p{
+    margin: 0;
+}
+.calculator h5{
+    text-transform: uppercase;
+    background-color: #a485f983;;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+}
+.calculator h6{
+    color: white;
+}
+.calculator_card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+}
+.cal_content{
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+.cal-content_2 {
+    background-color: #a485f983;
+    color:white 
+}
+.calc-input{
+    width: 70%;
+    height: 35px;
+    border-radius: 15px 0px 0px 15px;
+    border: 0px;
+   background-color: #a485f983;
+   color:white;
+   padding: 8px;
+}
+.calc-input:focus-visible{
+    outline: none;
+}
+.cal_btn{
+    width: 30%;
+    background-color: white;
+    height: 35px;
+    border-radius:0px 5px 5px 0px;
+    padding: 8px;
+}
+.submit-btn{
+    background-color: #a485f983;
+    color:white;
+    width: 100%; 
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+}
 /* ---------welcome-area------------ */
 .welcome-btn{
     background-color: #1356d6;
@@ -41,6 +118,10 @@ background-color:#1356d6;
     color:black;
     transition: 0.6s;
 }
+.welcome_content .fas {
+    font-size: 30px;
+    margin-bottom: 6%;
+}
 .welcome_content{
     transition: 0.6s;  
 }
@@ -50,4 +131,82 @@ background-color:#1356d6;
 .welcome_content:hover{
     box-shadow: 1px 2px 8px 0px black;
     cursor: pointer;
+}
+.transfer_content{
+    background-color:rgba(172, 166, 166, 0.403);
+    margin: 10% 0%;
+    border-radius: 8px;
+    padding: 60px;
+}
+/* --------footer------------ */
+.footer_top{
+    background-color:#2A3883;
+}
+.card-img{
+    width: 70px;
+    height: 40px;
+}
+.footer-brand{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+.footer_top p{
+    margin: 0;
+    color:white
+}
+.footer_top h6{
+    color:white;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.footer_top li{
+    list-style-type: none;
+    padding-top: 2%;
+}
+.footer_top a{
+    color:white;
+  
+}
+.footer-btn{
+    width: 30%;
+    height: 38px;
+    border: 0; 
+    background-color: #4502ff;
+    color: white;
+    font-size: 18px;
+}
+.footer-input{
+    width: 70%;
+    height: 38px;
+}
+.footer_bottom {
+    background-color:#1D2971;
+}
+.footer_bottom p{
+    margin: 0;
+    color: white;
+}
+.footer_bottom .fab{
+   color: white;
+   font-size: 20px;
+}
+.about-section h6{
+    font-size: 18px;
+    font-weight: 600;
+   color: #485664;
+}
+.about-section .fa-check{
+    color: blue;
+    margin-right: 1%;
+  
+}
+.about-section h5{
+    color: #485664;
+    font-size: 32px;
+}
+@media screen and (max-width:1414px){
+    .about-section h5{
+        font-size: 25px;
+    }
 }
